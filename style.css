@@ -1,83 +1,95 @@
-.wrapper{
-    /* margin: 0px 0px; */
-    padding: 125px 0px;
-    width: auto;
-    height: auto;
-    text-align: center;
-    background-image: url(images/fone.jpg);
-    background-color: rgb(79, 70, 58);
+.wrapper {
+  /* margin: 0px 0px; */
+  padding: 125px 0px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-image: url(images/fone.jpg);
+  background-color: rgb(79, 70, 58);
 }
 
-.calc{
-    padding-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 40px;
-    width: 400px;
-    height: 500px;
-    border-radius: 1%;
-    background-color: rgb(76, 72, 80);
-    text-align: center;
-}  
-.calc_display{
-width: 350px;
-height: 80px;
-background-color: rgb(36, 29, 29);
-margin-left: auto;
-margin-right: auto;
-
+.calc {
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  width: 400px;
+  height: 500px;
+  border-radius: 1%;
+  background-color: rgb(76, 72, 80);
+  text-align: center;
+}
+.calc_display {
+  width: 350px;
+  height: 80px;
+  background-color: rgb(36, 29, 29);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.calc-display-input{
-    width: 350px;
-height: 80px;
-background-color: rgb(56, 20, 20);
-font-size: 60px;
-color: rgb(15, 109, 39);
-text-align: right;
+.calc-display-input {
+  width: 350px;
+  height: 80px;
+  background-color: rgb(56, 20, 20);
+  font-size: 60px;
+  color: rgb(15, 109, 39);
+  text-align: right;
 }
 
-.calc-buttons{
-    height: 400px;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-gap: 8px;
+.calc-buttons {
+  height: 400px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  display: grid;
+  grid-column: 3 / span 2;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  
+  grid-gap: 8px;
 }
-.button{
-    font-size: 50px;
-color: rgb(8, 8, 9);
-cursor: pointer;
+.button_number,
+.button_operator,
+.button_decimal,
+.button_clean {
+  font-size: 50px;
+  color: rgb(8, 8, 9);
+  cursor: pointer;
 }
-.button:hover{
-    background-color:  rgb(70, 114, 114);
+.button_number:hover {
+  background-color: rgb(70, 114, 114);
 }
-#ce:hover{
-background-color: rgb(143, 52, 52);
+.button_operator:hover {
+  background-color: rgb(70, 114, 114);
+}
+.button_clean:hover {
+  background-color: rgb(70, 114, 114);
+}
+.button_decimal:hover {
+  background-color: rgb(70, 114, 114);
+}
+#ce:hover {
+  background-color: rgb(143, 52, 52);
 }
 
-#c:hover{
-    background-color: rgb(143, 52, 52);
+#c:hover {
+  background-color: rgb(143, 52, 52);
+}
 
+#split:hover {
+  background-color: rgb(46, 162, 94);
 }
-#split:hover{
-    background-color: rgb(46, 162, 94);
-}
-#multiply:hover{
-    background-color: rgb(46, 162, 94);
 
+#multiply:hover {
+  background-color: rgb(46, 162, 94);
 }
-#plus:hover{
-    background-color: rgb(46, 162, 94);
-    
+#plus:hover {
+  background-color: rgb(46, 162, 94);
 }
-#minus:hover{
-    background-color: rgb(46, 162, 94);
+#minus:hover {
+  background-color: rgb(46, 162, 94);
 }
-#equally:hover{
-    background-color: rgb(46, 162, 94);
+#result:hover {
+  background-color: rgb(46, 162, 94);
 }
